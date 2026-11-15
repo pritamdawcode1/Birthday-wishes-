@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untie the Magical Ribbon</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body data-page="magical-gift">
+  <main class="stage-container">
+    <section class="storybook-card">
+      <span class="eyebrow-tag">Chapter II &bull; The First Box</span>
+      <h1>Untie the Golden Ribbon</h1>
+      <p class="lead-text">Click the ribbon to unlock the magic hidden inside.</p>
+
+      <div id="magic-box-stage" class="gift-3d-scene">
+        <div class="gift-3d-box">
+          <div class="gift-bow"></div>
+          <div class="gift-lid"></div>
+          <div class="gift-base"></div>
+        </div>
+      </div>
+
+      <button id="untie-ribbon-btn" class="pill-btn pill-btn-soft" type="button">Untie Ribbon</button>
+
+      <div id="magic-secret-panel" class="reveal-panel">
+        <p><strong>Secret Note Unlocked:</strong> You deserve all the magic in the universe today, <span data-friend-name>Friend</span>! Ready to see what's baking in the kitchen?</p>
+      </div>
+
+      <div class="btn-row">
+        <button id="magic-continue-btn" class="magic-btn" data-nav="preparation.html" type="button" disabled>CONTINUE TO KITCHEN</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/shared.js"></script>
+  <script src="/js/animations.js"></script>
+</body>
+</html>

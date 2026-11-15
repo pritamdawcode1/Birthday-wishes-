@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Magical Wish Garden</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body data-page="garden">
+  <main class="stage-container">
+    <section class="storybook-card">
+      <span class="eyebrow-tag">Chapter IX &bull; Wish Garden</span>
+      <h1>Plant a Wish in the Sky</h1>
+      <p class="lead-text">Type a birthday wish below and watch it rise into the garden sky as a glowing star.</p>
+
+      <div id="wish-star-sky" class="wish-garden-sky"></div>
+      <p id="wish-count" style="font-size: 0.88rem; font-weight: 700;"></p>
+
+      <form id="wish-form" class="wish-form">
+        <input id="wish-input" class="wish-input" type="text" maxlength="60" placeholder="Write a birthday wish..." required />
+        <button class="magic-btn" type="submit">SEND TO STARS</button>
+      </form>
+
+      <div class="btn-row">
+        <button class="pill-btn pill-btn-soft" data-nav="letter.html" type="button">Read Your Secret Letter &rarr;</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/shared.js"></script>
+  <script src="/js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Scrapbook Memories</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body data-page="memories">
+  <main class="stage-container">
+    <section class="storybook-card">
+      <span class="eyebrow-tag">Chapter VI &bull; Scrapbook</span>
+      <h1>Captured Moments</h1>
+      <p class="lead-text">Tap any Polaroid to enlarge and flip through our favorite chapters.</p>
+
+      <div id="polaroid-grid" class="polaroid-grid"></div>
+
+      <button class="magic-btn" data-nav="gifts.html" type="button">OPEN YOUR 3 SPECIAL GIFTS</button>
+    </section>
+  </main>
+
+  <div id="memory-modal" class="lightbox-modal" role="dialog" aria-modal="true">
+    <div class="lightbox-content">
+      <div id="modal-visual" class="polaroid-frame" style="margin-bottom: 14px;"></div>
+      <p id="modal-date" class="polaroid-date"></p>
+      <p id="modal-caption" class="polaroid-caption" style="margin-bottom: 18px;"></p>
+      <div class="btn-row">
+        <button id="modal-prev" class="pill-btn pill-btn-soft" type="button">&larr; Previous</button>
+        <button id="modal-close" class="pill-btn pill-btn-ghost" type="button">Close</button>
+        <button id="modal-next" class="pill-btn pill-btn-soft" type="button">Next &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/shared.js"></script>
+  <script src="/js/animations.js"></script>
+</body>
+</html>

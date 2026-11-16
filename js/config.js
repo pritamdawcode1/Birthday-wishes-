@@ -3,9 +3,9 @@
  * Edit the values below to customize the entire 16-page birthday experience.
  */
 const BIRTHDAY_CONFIG = {
-  friendName: "Srijana",
+  friendName: "Rahul",
   senderName: "Your Friend",
-  birthdayDate: "November 25",
+  birthdayDate: "November 10",
 
   // Page 2: Welcome Screen
   welcomeHeadline: "A Magical Day Begins...",

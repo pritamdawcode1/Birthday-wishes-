@@ -17,7 +17,7 @@ const ExperienceState = {
     "gift1.html",
     "gift2.html",
     "gift3.html",
-    
+    "quiz.html",
     "garden.html",
     "letter.html",
     "finale.html"

@@ -17,7 +17,7 @@ const ExperienceState = {
     "gift1.html",
     "gift2.html",
     "gift3.html",
-    "quiz.html",
+    "gift-booking.html",
     "garden.html",
     "letter.html",
     "finale.html"
@@ -33,7 +33,6 @@ const ExperienceState = {
       completed: {},
       giftsOpened: { gift1: false, gift2: false, gift3: false },
       wishes: [],
-      quizScore: null,
       audio: { playing: false, muted: false, volume: 0.5 }
     };
   },
@@ -88,7 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentFile = window.location.pathname.split("/").pop() || "index.html";
   ExperienceState.markVisited(currentFile);
 
-  // Inject personalized tokens across DOM
   document.querySelectorAll("[data-friend-name]").forEach((el) => {
     el.textContent = BIRTHDAY_CONFIG.friendName;
   });
@@ -96,7 +94,6 @@ document.addEventListener("DOMContentLoaded", () => {
     el.textContent = BIRTHDAY_CONFIG.senderName;
   });
 
-  // Wire up standard navigation buttons
   document.querySelectorAll("[data-nav]").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
@@ -105,7 +102,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Progress bar indicator
   const pageIndex = ExperienceState.pages.indexOf(currentFile);
   const progressEl = document.getElementById("experience-progress-fill");
   if (progressEl && pageIndex >= 0) {
@@ -113,3 +109,4 @@ document.addEventListener("DOMContentLoaded", () => {
     progressEl.style.width = `${pct}%`;
   }
 });
+
